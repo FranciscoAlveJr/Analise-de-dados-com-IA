@@ -5,7 +5,7 @@ from langchain_experimental.agents import create_pandas_dataframe_agent
 import streamlit as st
 import pandas as pd
 
-api_key = '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'
+api_key = ''
 
 st.title('Assistente de Análise de Dados com IA')
 
