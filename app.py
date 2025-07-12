@@ -4,8 +4,13 @@ from langchain_groq import ChatGroq
 from langchain_experimental.agents import create_pandas_dataframe_agent
 import streamlit as st
 import pandas as pd
+from dotenv import load_dotenv
 
-api_key = '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'
+load_dotenv()
+
+# Carregar a chave da API do Groq do arquivo .env
+# api_key = os.getenv('api_key')
+api_key = st.secrets['api_key']
 
 st.title('Assistente de Análise de Dados com IA')
 

@@ -140,3 +140,5 @@ cython_debug/
 *.zip
 *.csv
 *.png
+.streamlit/
+*.txt
